@@ -4,12 +4,15 @@ var info = document.getElementById('info');
 var cart = [];
 var quantity = [];
 
+if (localStorage.cart) {
+  cart = JSON.parse(localStorage.cart);
+  quantity = JSON.parse(localStorage.quantity);
+}
+
 
 function addToCart(event) {
   event.preventDefault();
 
-  // cart = JSON.parse(localStorage.cart);
-  // quantity = JSON.parse(localStorage.quantity);
 
   var name = event.target.name.value;
   var street = event.target.street.value;
