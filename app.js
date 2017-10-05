@@ -2,12 +2,17 @@
 
 var info = document.getElementById('info');
 var cart = [];
-var amountPurchased = [];
+var quantity = [];
 
-info.addEventListener('submit', addToCart);
+if (localStorage.cart) {
+  cart = JSON.parse(localStorage.cart);
+  quantity = JSON.parse(localStorage.quantity);
+}
+
 
 function addToCart(event) {
   event.preventDefault();
+
 
   var name = event.target.name.value;
   var street = event.target.street.value;
@@ -17,9 +22,10 @@ function addToCart(event) {
   var card = event.target.card.value;
   var chosen = event.target.productz.value;
   var amount = event.target.quantity.value;
+  console.log(amount);
 
 
-  console.log('name is: ' + amount);
+  // console.log('name is: ' + amount);
   if (name !== '') {
     localStorage.name = name;
   }
@@ -40,7 +46,10 @@ function addToCart(event) {
   }
   if (chosen !== '') {
     cart.push(chosen);
-    amountPurchased.push(amount);
+    quantity.push(amount);
     localStorage.cart = JSON.stringify(cart);
+    localStorage.quantity = JSON.stringify(quantity);
   }
 }
+
+info.addEventListener('submit', addToCart);
