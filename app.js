@@ -1,5 +1,6 @@
 'use strict';
 
+
 var info = document.getElementById('info');
 var cart = [];
 var quantity = [];
@@ -50,6 +51,14 @@ function addToCart(event) {
     localStorage.cart = JSON.stringify(cart);
     localStorage.quantity = JSON.stringify(quantity);
   }
+  location.reload();
 }
+
+if (localStorage.cart.length > 2) {
+  var cartResponse = document.getElementById('orderCounter');
+  var orderCount = document.createElement('h6');
+  orderCount.textContent = 'You have ' + cart.length + ' orders in your cart';
+  cartResponse.appendChild(orderCount);
+};
 
 info.addEventListener('submit', addToCart);

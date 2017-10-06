@@ -23,7 +23,7 @@ for (var i = 0; i < cart.length; i++) {
 function makeCart(){
   var buildList = document.getElementById('cartList').innerHTML;
   for (var i = 0; i < Product.orderInfo.length; i++) {
-    buildList = buildList.concat('<li id="test"> <img src="' + Product.orderInfo[i].source + '" /> Item Count: ' + Product.orderInfo[i].count + ' <button type="button" name="' + i + '" onClick="deleteString(this.name)">Delete yourself</button> </li>');
+    buildList = buildList.concat('<li id="test"> <img src="' + Product.orderInfo[i].source + '" /> Item Count: ' + Product.orderInfo[i].count + ' <button type="button" name="' + i + '" onClick="deleteString(this.name)">Remove from cart</button> </li>');
     console.log(buildList);
   }
   document.getElementById('cartList').innerHTML = buildList;
@@ -35,5 +35,7 @@ makeCart();
 function deleteString(name){
   cart.splice(name, 1);
   localStorage.cart = JSON.stringify(cart);
+  quantity.splice(name, 1);
+  localStorage.quantity = JSON.stringify(quantity);
   location.reload();
 }
