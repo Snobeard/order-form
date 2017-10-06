@@ -2,10 +2,14 @@
   padding: 0px;
   margin: 0px;
 }
-#cartlist {
-  border: 5px dashed black;
-  padding: 10px;
+body {
+  background-color:#ffc374;
+}
+#cartList {
+  margin: 3% 10%;
   list-style-type: none;
+  border: 10px solid #baddad;
+  border-radius: 13px;
 }
 header {
   background-color: #baddad;
@@ -13,23 +17,55 @@ header {
 }
 nav {
   background-color: #faddad;
+  color: #baddad;
+  padding-left: 10%;
 }
-nav ul li {
+nav ul li{
   display: inline-block;
+  padding: 10px;
 }
-li {
-  border: 10px orange;
+nav ul a {
+  text-decoration: none;
+}
+#cartList li {
+  position: relative;
+  border: 2px solid #baddad;
   padding: 10px;
   list-style-type: none;
-  text: #baddad 2em;
+  background-color: rgb(255, 228, 193);
+}
+#cartList img {
+  height: 200px;
 }
 
-img {
-  margin-left: 0px;
-  width: 100px;
-  height: auto;
+#cartList button {
+  position: absolute;
+  right: 5%;
+  top: 60%;
+  padding: 8px;
 }
-
-button {
-  margin-left: 90%;
+#selections {
+  margin: 35px 10%;
+}
+#info {
+  margin: 0px 10%;
+}
+#info fieldset {
+  width: 90%;
+  min-width: 497px;
+  padding: 20px;
+  max-width: 800px;
+}
+#info fieldset legend {
+  background-color: #ffe3be;
+  padding: 3px 19px;
+  border-radius: 5px;
+}
+#addCart {
+  margin: 30px 10%;
+  padding: 10px 30px;
+}
+#orderCounter {
+  margin: 10px 10%;
+  font-size: 40px;
 }
