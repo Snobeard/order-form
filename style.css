@@ -1,9 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
 #cartlist {
   border: 5px dashed black;
   padding: 10px;
   list-style-type: none;
 }
-
+header {
+  background-color: #baddad;
+  text-align: center;
+}
+nav {
+  background-color: #faddad;
+}
+nav ul li {
+  display: inline-block;
+}
 li {
   border: 10px orange;
   padding: 10px;
