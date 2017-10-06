@@ -53,12 +53,13 @@ function addToCart(event) {
   }
   location.reload();
 }
-
-if (localStorage.cart.length > 2) {
-  var cartResponse = document.getElementById('orderCounter');
-  var orderCount = document.createElement('h6');
-  orderCount.textContent = 'You have ' + cart.length + ' orders in your cart';
-  cartResponse.appendChild(orderCount);
+if (localStorage.cart) {
+  if (localStorage.cart.length > 2) {
+    var cartResponse = document.getElementById('orderCounter');
+    var orderCount = document.createElement('h6');
+    orderCount.textContent = 'You have ' + cart.length + ' orders in your cart';
+    cartResponse.appendChild(orderCount);
+  };
 };
 
 info.addEventListener('submit', addToCart);
