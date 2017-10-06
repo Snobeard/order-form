@@ -19,101 +19,101 @@
       </ul>
     </nav>
 
-    <div>
-      <h2>Product</h2>
-      <select id="products" name="productz" form="info">
-        <option value="" selected></option>
-        <option value="img/bag.jpg">R2-D2 Bag</option>
-        <option value="img/banana.jpg">Banana Slicer</option>
-        <option value="img/bathroom.jpg">Bathroom iPad Holder</option>
-        <option value="img/boots.jpg">Stylish Open-Toed Rainboots</option>
-        <option value="img/breakfast.jpg">All-In-One Toaster/Coffee Maker/Fryer</option>
-        <option value="img/bubblegum.jpg">Meatball Bubble Gum</option>
-        <option value="img/chair.jpg">Convex Chair</option>
-        <option value="img/cthulhu.jpg">Life-Size Cthulhu Action Figure</option>
-        <option value="img/dog-duck.jpg">Duck Bill for your Dog</option>
-        <option value="img/dragon.jpg">Tasty Fresh Dragon Meat</option>
-        <option value="img/pen.jpg">Pen-Cap Utensils</option>
-        <option value="img/pet-sweep.jpg">Dust Removal for your Dogs</option>
-        <option value="img/scissors.jpg">Slice-And-Serve Pizza Cutter</option>
-        <option value="img/shark.jpg">Jaws Sleeping Bag</option>
-        <option value="img/sweep.png">Dust Removal for your Baby</option>
-        <option value="img/tauntaun.jpg">TaunTaun Sleeping Bag</option>
-        <option value="img/unicorn.jpg">Fresh Unicorn Meat</option>
-        <option value="img/usb.gif">Wiggly Waggly Tentacle USB</option>
-        <option value="img/wine-glass.jpg">Wine Glass for Chuggers</option>
-      </select>
-      <label for="quantity">Quantity</label>
-      <input type="number" min="0" max="99" name="quantity" value="1" form="info">
-    </div>
-
-    <form id="info">
-      <fieldset>
-        <legend>User Information</legend>
-        <input type="text" name="name" placeholder="First and Last Name"> </br></br>
-        <input type="text" name="street" placeholder="Street Address"> </br>
-        <input type="text" name="city" placeholder="City">
-        <select> <!-- states snippet -->
-        	<option value="AL">Alabama</option>
-        	<option value="AK">Alaska</option>
-        	<option value="AZ">Arizona</option>
-        	<option value="AR">Arkansas</option>
-        	<option value="CA">California</option>
-        	<option value="CO">Colorado</option>
-        	<option value="CT">Connecticut</option>
-        	<option value="DE">Delaware</option>
-        	<option value="DC">District Of Columbia</option>
-        	<option value="FL">Florida</option>
-        	<option value="GA">Georgia</option>
-        	<option value="HI">Hawaii</option>
-        	<option value="ID">Idaho</option>
-        	<option value="IL">Illinois</option>
-        	<option value="IN">Indiana</option>
-        	<option value="IA">Iowa</option>
-        	<option value="KS">Kansas</option>
-        	<option value="KY">Kentucky</option>
-        	<option value="LA">Louisiana</option>
-        	<option value="ME">Maine</option>
-        	<option value="MD">Maryland</option>
-        	<option value="MA">Massachusetts</option>
-        	<option value="MI">Michigan</option>
-        	<option value="MN">Minnesota</option>
-        	<option value="MS">Mississippi</option>
-        	<option value="MO">Missouri</option>
-        	<option value="MT">Montana</option>
-        	<option value="NE">Nebraska</option>
-        	<option value="NV">Nevada</option>
-        	<option value="NH">New Hampshire</option>
-        	<option value="NJ">New Jersey</option>
-        	<option value="NM">New Mexico</option>
-        	<option value="NY">New York</option>
-        	<option value="NC">North Carolina</option>
-        	<option value="ND">North Dakota</option>
-        	<option value="OH">Ohio</option>
-        	<option value="OK">Oklahoma</option>
-        	<option value="OR">Oregon</option>
-        	<option value="PA">Pennsylvania</option>
-        	<option value="RI">Rhode Island</option>
-        	<option value="SC">South Carolina</option>
-        	<option value="SD">South Dakota</option>
-        	<option value="TN">Tennessee</option>
-        	<option value="TX">Texas</option>
-        	<option value="UT">Utah</option>
-        	<option value="VT">Vermont</option>
-        	<option value="VA">Virginia</option>
-        	<option value="WA" selected>Washington</option>
-        	<option value="WV">West Virginia</option>
-        	<option value="WI">Wisconsin</option>
-        	<option value="WY">Wyoming</option>
+      <div id="selections">
+        <h2>Product</h2>
+        <select id="products" name="productz" form="info">
+          <option value="" selected></option>
+          <option value="img/bag.jpg">R2-D2 Bag</option>
+          <option value="img/banana.jpg">Banana Slicer</option>
+          <option value="img/bathroom.jpg">Bathroom iPad Holder</option>
+          <option value="img/boots.jpg">Stylish Open-Toed Rainboots</option>
+          <option value="img/breakfast.jpg">All-In-One Toaster/Coffee Maker/Fryer</option>
+          <option value="img/bubblegum.jpg">Meatball Bubble Gum</option>
+          <option value="img/chair.jpg">Convex Chair</option>
+          <option value="img/cthulhu.jpg">Life-Size Cthulhu Action Figure</option>
+          <option value="img/dog-duck.jpg">Duck Bill for your Dog</option>
+          <option value="img/dragon.jpg">Tasty Fresh Dragon Meat</option>
+          <option value="img/pen.jpg">Pen-Cap Utensils</option>
+          <option value="img/pet-sweep.jpg">Dust Removal for your Dogs</option>
+          <option value="img/scissors.jpg">Slice-And-Serve Pizza Cutter</option>
+          <option value="img/shark.jpg">Jaws Sleeping Bag</option>
+          <option value="img/sweep.png">Dust Removal for your Baby</option>
+          <option value="img/tauntaun.jpg">TaunTaun Sleeping Bag</option>
+          <option value="img/unicorn.jpg">Fresh Unicorn Meat</option>
+          <option value="img/usb.gif">Wiggly Waggly Tentacle USB</option>
+          <option value="img/wine-glass.jpg">Wine Glass for Chuggers</option>
         </select>
-        <input type="text" name="zip" placeholder="5 digit zip code" maxlength="5"> </br></br>
-        <input type="text" name="phone" placeholder="Phone Number" maxlength="10"> </br>
-        <input type="text" name="card" placeholder="Credit Card Number" maxlength="16">
-      </fieldset>
-    </form>
+        <label for="quantity">Quantity</label>
+        <input type="number" min="0" max="99" name="quantity" value="1" form="info">
+      </div>
 
-    <input type="submit" name="submit" value="Add to Cart" form="info">
-    <div id="orderCounter"></div>
+      <form id="info">
+        <fieldset>
+          <legend>User Information</legend>
+          <input type="text" name="name" placeholder="First and Last Name"> </br></br>
+          <input type="text" name="street" placeholder="Street Address"> </br>
+          <input type="text" name="city" placeholder="City">
+          <select> <!-- states snippet -->
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA" selected>Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select>
+          <input type="text" name="zip" placeholder="5 digit zip code" maxlength="5"> </br></br>
+          <input type="text" name="phone" placeholder="Phone Number" maxlength="10"> </br>
+          <input type="text" name="card" placeholder="Credit Card Number" maxlength="16">
+        </fieldset>
+      </form>
+
+      <input id="addCart" type="submit" name="submit" value="Add to Cart" form="info">
+      <div id="orderCounter"></div>
     <script src="app.js"></script>
   </body>
 </html>
